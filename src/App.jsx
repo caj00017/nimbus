@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import nimbus from '../public/nimbus.png';
 import './App.css'
 
 function App() {
@@ -29,7 +30,7 @@ function App() {
         <p>
           This is Nimbus. Pet him to earn $$$.
         </p>
-        <img id="nimbus" onClick={updateCount} src="public/nimbus.png" alt="nimbus" width="200" height="200"></img>
+        <img id="nimbus" onClick={updateCount} src={nimbus} alt="nimbus" width="200" height="200"></img>
         <p>
           You have ${count}.
         </p>

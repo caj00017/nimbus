@@ -7,7 +7,8 @@ function App() {
   const [user, setUser] = useState({ name: 'Guest' });
 
   useEffect(() => {
-    setCount(parseInt(localStorage.getItem('count')));
+    const localCount = parseInt(localStorage.getItem('count'))
+    setCount(localCount ? localCount : 0);
   }, []);
 
   const updateCount = () => {
